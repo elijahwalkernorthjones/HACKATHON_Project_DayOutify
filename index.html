@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Itinerary Planner App HACKATHON</title>
+</head>
+<body>
+
+    <h1>DayOutify</h1>
+    <div class="wrapper">
+        <form id='itineraryForm' action="">
+            
+            <input type="text" class="inputs" placeholder="Start Location" id="location"> 
+            
+            <input type="date" class="inputs" name="" id="date">
+            <input type="time" class="inputs" name="" id="startTime">
+            <input type="time" class="inputs" name="" id="endTime">
+
+            <div class="dropdown">
+                <label for="parameter">What is your budget?</label>
+                <select id="parameter">
+                    <option value="parameter1">less than $25</option>
+                    <option value="parameter2">$25</option>
+                    <option value="parameter3">$50</option>
+                    <option value="parameter4">more than $100</option>
+                </select>
+            </div>
+
+            <div id="preferenceWrapper"> 
+
+                <h3>Preferences (Optional)</h3>
+
+                <input type="checkbox" value="" class="icon" id="restaurants">
+                <label for="restaurants">Restaurants</label>
+
+                <input type="checkbox" value="" class="icon" id="beaches">
+                <label for="beaches">Beaches</label>
+
+                <input type="checkbox" value="" class="icon" id="museums">
+                <label for="museums">Museums</label>
+
+                <input type="checkbox" value="" class="icon" id="entertainment">
+                <label for="entertainment">Entertainment</label>
+
+                <input type="checkbox" value="" class="icon" id="parks">
+                <label for="parks">Parks</label>
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <div id="recommendationArea"></div>
+            
+        </form>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
